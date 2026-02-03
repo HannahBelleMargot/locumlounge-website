@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LocumLounge | Direct GP Locum Connections</title>
-    <meta name="description" content="LocumLounge connects GP locum doctors and clinics across Australia through honest ratings, real transparency, and support when you need it.">
-    
+    <meta name="description"
+        content="LocumLounge connects GP locum doctors and clinics across Australia through honest ratings, real transparency, and support when you need it.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-94T4MS5WP2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-94T4MS5WP2');
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
+        rel="stylesheet">
+
     <style>
         :root {
             /* Brand colours from logo */
@@ -20,7 +34,7 @@
             --color-navy: #364F6B;
             --color-navy-light: #4A6A8A;
             --color-navy-dark: #2A3D52;
-            
+
             /* Supporting colours */
             --color-accent: #F4A261;
             --color-accent-light: #F7BE8F;
@@ -30,7 +44,7 @@
             --color-text-light: #636E72;
             --color-white: #FFFFFF;
             --color-heart: #2A9D8F;
-            
+
             --font-display: 'Fraunces', Georgia, serif;
             --font-body: 'DM Sans', -apple-system, sans-serif;
             --shadow-soft: 0 4px 20px rgba(54, 79, 107, 0.08);
@@ -58,17 +72,30 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: var(--font-display);
             font-weight: 600;
             line-height: 1.2;
         }
 
-        h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
-        h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
-        h3 { font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+        }
 
-        p { font-size: 1.05rem; }
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+        }
+
+        h3 {
+            font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+        }
+
+        p {
+            font-size: 1.05rem;
+        }
 
         .container {
             max-width: 1200px;
@@ -266,8 +293,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.2); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
         }
 
         .hero h1 {
@@ -332,6 +368,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -343,6 +380,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -566,15 +604,36 @@
             animation: heartBeat 1.5s ease-in-out infinite;
         }
 
-        .heart:nth-child(2) { animation-delay: 0.1s; }
-        .heart:nth-child(3) { animation-delay: 0.2s; }
-        .heart:nth-child(4) { animation-delay: 0.3s; }
-        .heart:nth-child(5) { animation-delay: 0.4s; }
+        .heart:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .heart:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .heart:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .heart:nth-child(5) {
+            animation-delay: 0.4s;
+        }
 
         @keyframes heartBeat {
-            0%, 100% { transform: scale(1); }
-            10% { transform: scale(1.1); }
-            20% { transform: scale(1); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            10% {
+                transform: scale(1.1);
+            }
+
+            20% {
+                transform: scale(1);
+            }
         }
 
         .ratings-grid {
@@ -900,13 +959,13 @@
         }
 
         .cta .btn-secondary {
-            background: rgba(255,255,255,0.1);
-            border-color: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
             color: white;
         }
 
         .cta .btn-secondary:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .cta-note {
@@ -1085,9 +1144,14 @@
         }
 
         @media (max-width: 480px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.6rem; }
-            
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
             .hero-ctas {
                 flex-direction: column;
             }
@@ -1113,6 +1177,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -1144,7 +1209,9 @@
                     Now accepting early registrations
                 </div>
                 <h1>Skip the agency.<br>Connect <em>directly.</em></h1>
-                <p class="hero-subtitle">The best placements happen when trust goes both ways. LocumLounge connects GP locum doctors and clinics across Australia through honest ratings, real transparency, and support when you need it — putting an end to the bidding wars that drain funds from quality healthcare.</p>
+                <p class="hero-subtitle">The best placements happen when trust goes both ways. LocumLounge connects GP
+                    locum doctors and clinics across Australia through honest ratings, real transparency, and support
+                    when you need it — putting an end to the bidding wars that drain funds from quality healthcare.</p>
                 <div class="hero-ctas">
                     <a href="#register" class="btn btn-primary btn-large">I'm a Clinic</a>
                     <a href="#register" class="btn btn-secondary btn-large">I'm a Doctor</a>
@@ -1171,15 +1238,23 @@
     <section class="smarter-way">
         <div class="container">
             <h2>A smarter way to connect</h2>
-            <p class="smarter-way-intro">We've taken the best parts of traditional recruitment — the human support, the problem-solving, the accountability — and combined them with smart automation. The result? A level playing field where placements are made on merit, not to the highest bidder, with real people still there when you need them.</p>
+            <p class="smarter-way-intro">We've taken the best parts of traditional recruitment — the human support, the
+                problem-solving, the accountability — and combined them with smart automation. The result? A level
+                playing field where placements are made on merit, not to the highest bidder, with real people still
+                there when you need them.</p>
             <div class="smarter-way-grid">
                 <div class="smarter-way-card">
                     <h3>For Clinics</h3>
-                    <p>Traditional agency commissions of 15% on every shift and $20,000+ conversion fees add up fast. That's money that could be spent on nursing support, consumables, and admin. With LocumLounge, you get transparent flat-rate pricing and real insight into every locum's track record before you book.</p>
+                    <p>Traditional agency commissions of 15% on every shift and $20,000+ conversion fees add up fast.
+                        That's money that could be spent on nursing support, consumables, and admin. With LocumLounge,
+                        you get transparent flat-rate pricing and real insight into every locum's track record before
+                        you book.</p>
                 </div>
                 <div class="smarter-way-card">
                     <h3>For Doctors</h3>
-                    <p>No more walking into the unknown. See payment terms, working conditions, and clinic culture upfront — rated by doctors who've actually worked there. And because clinics aren't paying agency fees on top, you won't be offered lower rates to make the numbers work.</p>
+                    <p>No more walking into the unknown. See payment terms, working conditions, and clinic culture
+                        upfront — rated by doctors who've actually worked there. And because clinics aren't paying
+                        agency fees on top, you won't be offered lower rates to make the numbers work.</p>
                 </div>
             </div>
         </div>
@@ -1193,7 +1268,7 @@
                 <button class="tab-btn active" onclick="showTab('clinics')">For Clinics</button>
                 <button class="tab-btn" onclick="showTab('doctors')">For Doctors</button>
             </div>
-            
+
             <div id="clinics" class="tab-content active">
                 <div class="steps">
                     <div class="step">
@@ -1209,7 +1284,8 @@
                     <div class="step">
                         <div class="step-number">3</div>
                         <h4>Accept & Connect</h4>
-                        <p>Choose your preferred doctor, get travel booking prompts, and receive push notifications so you never miss a beat</p>
+                        <p>Choose your preferred doctor, get travel booking prompts, and receive push notifications so
+                            you never miss a beat</p>
                     </div>
                     <div class="step">
                         <div class="step-number">4</div>
@@ -1218,7 +1294,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div id="doctors" class="tab-content">
                 <div class="steps">
                     <div class="step">
@@ -1239,7 +1315,8 @@
                     <div class="step">
                         <div class="step-number">4</div>
                         <h4>Expand Your Network</h4>
-                        <p>The best placements happen when a friend recommends a clinic and you know what to expect. Now your friend network just got a whole lot wider.</p>
+                        <p>The best placements happen when a friend recommends a clinic and you know what to expect. Now
+                            your friend network just got a whole lot wider.</p>
                     </div>
                 </div>
             </div>
@@ -1250,8 +1327,9 @@
     <section class="ratings" id="ratings">
         <div class="container">
             <h2>The Hearts Rating System</h2>
-            <p class="ratings-intro">A mutual accountability system where both clinics and doctors rate each other after every shift. Because trust goes both ways.</p>
-            
+            <p class="ratings-intro">A mutual accountability system where both clinics and doctors rate each other after
+                every shift. Because trust goes both ways.</p>
+
             <div class="hearts-display">
                 <span class="heart">♥</span>
                 <span class="heart">♥</span>
@@ -1259,7 +1337,7 @@
                 <span class="heart">♥</span>
                 <span class="heart">♥</span>
             </div>
-            
+
             <div class="ratings-grid">
                 <div class="ratings-card">
                     <h3><span>🏥</span> Why Clinics Love It</h3>
@@ -1271,7 +1349,7 @@
                         <li>Pre-Pay Service means one less task post-placement — we handle payments for you</li>
                     </ul>
                 </div>
-                
+
                 <div class="ratings-card">
                     <h3><span>👨‍⚕️</span> Why Doctors Love It</h3>
                     <ul>
@@ -1284,10 +1362,12 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="moderation-box">
                 <h3>Protected, Private & Moderated</h3>
-                <p>All ratings are automatically anonymous, protecting honest feedback. Reviews are only visible to vetted users on the platform — not the general public. Both parties have a right of reply to any review.</p>
+                <p>All ratings are automatically anonymous, protecting honest feedback. Reviews are only visible to
+                    vetted users on the platform — not the general public. Both parties have a right of reply to any
+                    review.</p>
                 <div class="moderation-features">
                     <div class="moderation-feature">
                         <span>🔒</span> Anonymous by default
@@ -1302,7 +1382,10 @@
                         <span>🛡️</span> Quality you can trust
                     </div>
                 </div>
-                <p style="margin-top: 24px; font-size: 0.95rem;">Low ratings trigger a resolution process — a neutral third party reviews the situation and attempts to resolve disputes before any negative rating is published. If issues are substantiated, misconduct can result in a ban from the app, giving users peace of mind on quality.</p>
+                <p style="margin-top: 24px; font-size: 0.95rem;">Low ratings trigger a resolution process — a neutral
+                    third party reviews the situation and attempts to resolve disputes before any negative rating is
+                    published. If issues are substantiated, misconduct can result in a ban from the app, giving users
+                    peace of mind on quality.</p>
             </div>
         </div>
     </section>
@@ -1311,8 +1394,9 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <h2>Simple, Transparent Pricing</h2>
-            <p class="pricing-intro">No commissions. No posting fees. No conversion fees. Just straightforward pricing that makes sense.</p>
-            
+            <p class="pricing-intro">No commissions. No posting fees. No conversion fees. Just straightforward pricing
+                that makes sense.</p>
+
             <div class="pricing-grid">
                 <div class="pricing-card free">
                     <div class="pricing-label">For Doctors</div>
@@ -1328,7 +1412,7 @@
                     </ul>
                     <a href="#register" class="btn btn-accent" style="width: 100%;">Register as a Doctor</a>
                 </div>
-                
+
                 <div class="pricing-card">
                     <div class="pricing-label">Pay Per Shift</div>
                     <div class="pricing-price">$30<span style="font-size: 1rem; font-weight: 400;">/hour</span></div>
@@ -1342,7 +1426,7 @@
                     </ul>
                     <a href="#register" class="btn btn-primary" style="width: 100%;">Register as a Clinic</a>
                 </div>
-                
+
                 <div class="pricing-card featured">
                     <div class="pricing-label">Annual Subscription</div>
                     <div class="pricing-price">$5,000<span style="font-size: 1rem; font-weight: 400;">/year</span></div>
@@ -1357,9 +1441,11 @@
                     <a href="#register" class="btn btn-primary" style="width: 100%;">Register as a Clinic</a>
                 </div>
             </div>
-            
+
             <div class="pricing-note">
-                <p><strong>Pre-Pay Service available:</strong> We handle shift payments at hourly and daily rates. One less task for clinics post-placement, and doctors can rest assured they'll be paid on time — no chasing funds.</p>
+                <p><strong>Pre-Pay Service available:</strong> We handle shift payments at hourly and daily rates. One
+                    less task for clinics post-placement, and doctors can rest assured they'll be paid on time — no
+                    chasing funds.</p>
             </div>
         </div>
     </section>
@@ -1372,22 +1458,26 @@
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>Merit-Based Matching</h3>
-                    <p>Names stay hidden until booking is confirmed. Doctors are judged on reviews, experience, and qualifications only — not race, religion, or gender.</p>
+                    <p>Names stay hidden until booking is confirmed. Doctors are judged on reviews, experience, and
+                        qualifications only — not race, religion, or gender.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔔</div>
                     <h3>Smart Push Notifications</h3>
-                    <p>Never miss a shift that matches your saved preferences and availability. Get instant alerts when the right opportunity comes up.</p>
+                    <p>Never miss a shift that matches your saved preferences and availability. Get instant alerts when
+                        the right opportunity comes up.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📅</div>
                     <h3>One Calendar, All Shifts</h3>
-                    <p>Keep your whole locum calendar in one place. No more second-guessing if you're available or double-checking which recruiter booked which dates.</p>
+                    <p>Keep your whole locum calendar in one place. No more second-guessing if you're available or
+                        double-checking which recruiter booked which dates.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🇦🇺</div>
                     <h3>100% Australian Data</h3>
-                    <p>All data stored in Australia from day one. State health compliant and built for local regulations.</p>
+                    <p>All data stored in Australia from day one. State health compliant and built for local
+                        regulations.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
@@ -1407,11 +1497,14 @@
     <section class="cta" id="register">
         <div class="container">
             <h2>Ready to join LocumLounge?</h2>
-            <p class="cta-subtitle">Register your interest today and be among the first to experience a better way to connect.</p>
+            <p class="cta-subtitle">Register your interest today and be among the first to experience a better way to
+                connect.</p>
             <div class="cta-buttons">
                 <!-- REPLACE THESE LINKS WITH YOUR GOOGLE FORM URLs -->
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxd5vHCBsDZJ0hci6hQl1ETS_sJwsUsw8Iv_SkM3fHXvSKFQ/viewform?usp=publish-editor" target="_blank" class="btn btn-accent btn-large">Register as a Clinic</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxd5vHCBsDZJ0hci6hQl1ETS_sJwsUsw8Iv_SkM3fHXvSKFQ/viewform?usp=publish-editor" target="_blank" class="btn btn-secondary btn-large">Register as a Doctor</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxd5vHCBsDZJ0hci6hQl1ETS_sJwsUsw8Iv_SkM3fHXvSKFQ/viewform?usp=publish-editor"
+                    target="_blank" class="btn btn-accent btn-large">Register as a Clinic</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxd5vHCBsDZJ0hci6hQl1ETS_sJwsUsw8Iv_SkM3fHXvSKFQ/viewform?usp=publish-editor"
+                    target="_blank" class="btn btn-secondary btn-large">Register as a Doctor</a>
             </div>
             <p class="cta-note">We'll be in touch soon with early access details.</p>
         </div>
@@ -1423,7 +1516,8 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <img src="Logo_on_its_own.jpeg" alt="LocumLounge" class="footer-logo-img">
-                    <span class="footer-logo-text"><span class="locum">Locum</span><span class="lounge">Lounge</span></span>
+                    <span class="footer-logo-text"><span class="locum">Locum</span><span
+                            class="lounge">Lounge</span></span>
                 </div>
                 <div class="footer-links">
                     <a href="#how-it-works">How It Works</a>
@@ -1457,7 +1551,7 @@
             // Update buttons
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
-            
+
             // Update content
             document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
             document.getElementById(tabId).classList.add('active');
@@ -1465,7 +1559,7 @@
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -1484,15 +1578,16 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             const currentScroll = window.pageYOffset;
-            
+
             if (currentScroll > 100) {
                 header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
             } else {
                 header.style.boxShadow = 'none';
             }
-            
+
             lastScroll = currentScroll;
         });
     </script>
 </body>
+
 </html>
